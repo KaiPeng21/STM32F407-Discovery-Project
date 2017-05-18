@@ -3,8 +3,8 @@
  *
  * GPIO (General Purpose Input Output)
  *
- * Toggle the On-Chip Red LED  (Port D Pin 14) when On-Chip pushbutton is pressed (Port A Pin 1)
- * Oscillate the On-Chip Green LED (Port D Pin 12) at a rate of 2 second using TIM2 interrupt
+ * Toggle On-Chip Red LED  (Port D Pin 14)
+ * when On-Chip pushbutton is pressed (Port A Pin 1)
  *
  */
 
