@@ -211,3 +211,72 @@ Binding(ALT+CTRL+T,
 
 !ENTRY org.eclipse.core.net 4 0 2017-05-17 23:09:16.866
 !MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'µLªk¤U¸ü proxy ¦۰ʳ]©' #12167.
+
+!ENTRY com.atollic.truestudio.common.wizards 4 0 2017-05-18 02:08:29.604
+!MESSAGE Failed to find the correct FPU ABI, falling back to Soft. Value: 
+
+!ENTRY com.atollic.truestudio.common.wizards 4 0 2017-05-18 02:08:40.647
+!MESSAGE Failed to find the correct FPU ABI, falling back to Soft. Value: 
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.463
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.473
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.516
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.520
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-18 02:08:51.802
+!MESSAGE Failed to get device info (Debug) for project Demo03
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-18 02:08:51.804
+!MESSAGE Failed to get device info (Debug) for project Demo03
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-18 02:08:51.806
+!MESSAGE Failed to get device info (Debug) for project Demo03
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-18 02:08:51.811
+!MESSAGE Failed to get device info (Release) for project Demo03
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-18 02:08:51.813
+!MESSAGE Failed to get device info (Release) for project Demo03
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-18 02:08:51.815
+!MESSAGE Failed to get device info (Release) for project Demo03
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.922
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.931
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.951
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:51.955
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:52.166
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:08:52.170
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:09:32.988
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:09:33.755
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:09:34.749
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-18 02:09:35.257
+!MESSAGE Failed to find device info
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-18 02:10:02.796
+!MESSAGE Indexed 'Demo03' (35 sources, 74 headers) in 7.84 sec: 9,271 declarations; 30,262 references; 1 unresolved inclusions; 34 syntax errors; 0 unresolved names (0%)

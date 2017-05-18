@@ -1,5 +1,5 @@
 STM32F407 Discovery Feature Demos
 
-Demo01 - GPIO and LED blinking
-Demo02 - Interrupt and Pushbutton
-Demo03 - UART
+Demo01 - GPIO, LED blinking
+Demo02 - Interrupt, Pushbutton, TIM
+Demo03 - PWM and LED Intensity Control
