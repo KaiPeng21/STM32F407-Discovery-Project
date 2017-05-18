@@ -1,13 +1,3 @@
-/*
- * Demo 1 - GPIO and LED blinking
- *
- * GPIO (General Purpose Input Output)
- *
- * Turns on On-Chip Red LED (Port D Pin 14)
- * Oscillate On-Chip Green LED (Port D Pin 12)
- *
- */
-
 
 #include "stm32f4xx.h"
 
