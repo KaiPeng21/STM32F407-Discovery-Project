@@ -1,0 +1,141 @@
+!SESSION 2017-05-17 20:02:14.054 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2017-05-17 20:03:52.807
+!MESSAGE Loading product manager
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2017-05-17 20:03:52.937
+!MESSAGE OS info: Windows 10, 10.0, x86
+
+!ENTRY TrueSTUDIO 1 0 2017-05-17 20:03:57.069
+!MESSAGE Target: ARM, Version: 7.1.2, Build date: 20170322-1909, Installation dir: /C:/Program Files (x86)/Atollic/TrueSTUDIO for ARM 7.1.2/ide/
+
+!ENTRY TrueSTUDIO 1 0 2017-05-17 20:03:57.071
+!MESSAGE Workspace: D:\Project_STM\STM32F407-Discovery-Project
+
+!ENTRY LicenseSystem 1 0 2017-05-17 20:03:57.103
+!MESSAGE Updated java.library.path to: C:;C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 7.1.2\ide;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Atollic/TrueSTUDIO for ARM 7.1.2/ide/jre/bin/client;C:/Program Files (x86)/Atollic/TrueSTUDIO for ARM 7.1.2/ide/jre/bin;C:/Program Files (x86)/Atollic/TrueSTUDIO for ARM 7.1.2/ide/jre/lib/i386;C:\Program Files (x86)\ActiveState Komodo Edit 10\;C:\Python34\Lib\site-packages\PyQt4;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Common Files\Adobe\AGL;C:\Program Files\MATLAB\R2014b\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\OrCAD\OrCAD_16.6_Lite\OpenAccess\bin\win32\opt;C:\OrCAD\OrCAD_16.6_Lite\tools\pcb\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\fet\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\Capture;C:\OrCAD\OrCAD_16.6_Lite\tools\PSpice;C:\OrCAD\OrCAD_16.6_Lite\tools\specctra\bin;C:\OrCAD\OrCAD_16.6_Lite\tools\bin;;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 7.1.2\ide;;.
+
+!ENTRY TrueSTUDIO License 1 0 2017-05-17 20:03:58.035
+!MESSAGE Valid local features found: 0
+
+!ENTRY TrueSTUDIO License 1 0 2017-05-17 20:03:58.037
+!MESSAGE Valid network features found: 0
+
+!ENTRY TrueSTUDIO License 1 0 2017-05-17 20:03:58.038
+!MESSAGE License system initialized in 642ms
+
+!ENTRY TrueSTUDIO 1 0 2017-05-17 20:03:58.066
+!MESSAGE License numbers: 0 []
+
+!ENTRY TrueSTUDIO 1 0 2017-05-17 20:03:58.067
+!MESSAGE This installation is running as LITE
+
+!ENTRY org.eclipse.jface 2 0 2017-05-17 20:04:02.472
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-05-17 20:04:02.472
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@110e451,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d63b7e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.atollic.truestudio.integration.processorexpert 0 0 2017-05-17 20:04:14.570
+!MESSAGE Atollic TrueSTUDIO Processor Expert integration is up.
+
+!ENTRY edu.hawaii.ics.csdl.jupiter 1 0 2017-05-17 20:04:14.944
+!MESSAGE Code Review is up.
+
+!ENTRY org.eclipse.core.net 4 0 2017-05-17 20:04:14.971
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error '§䤣¨ì Proxy ¦۰ʳ]©w UR' #12180.
+
+!ENTRY com.atollic.truestudio.common.wizards 4 0 2017-05-17 20:05:25.277
+!MESSAGE Failed to find the correct FPU ABI, falling back to Soft. Value: 
+
+!ENTRY com.atollic.truestudio.common.wizards 4 0 2017-05-17 20:05:42.041
+!MESSAGE Failed to find the correct FPU ABI, falling back to Soft. Value: 
+
+!ENTRY com.atollic.truestudio.common.wizards 4 0 2017-05-17 20:05:42.587
+!MESSAGE Failed to find the correct FPU ABI, falling back to Soft. Value: 
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:02.977
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:02.987
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:02.994
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:02.995
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-17 20:06:03.089
+!MESSAGE Failed to get device info (Debug) for project Demo01
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-17 20:06:03.090
+!MESSAGE Failed to get device info (Debug) for project Demo01
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-17 20:06:03.091
+!MESSAGE Failed to get device info (Debug) for project Demo01
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-17 20:06:03.093
+!MESSAGE Failed to get device info (Release) for project Demo01
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-17 20:06:03.094
+!MESSAGE Failed to get device info (Release) for project Demo01
+
+!ENTRY com.atollic.truestudio.mbs 2 0 2017-05-17 20:06:03.094
+!MESSAGE Failed to get device info (Release) for project Demo01
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:03.137
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:03.139
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:03.159
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:03.161
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:03.264
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:03.267
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:43.863
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:44.609
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:45.297
+!MESSAGE Failed to find device info
+
+!ENTRY com.atollic.truestudio.mbs 4 0 2017-05-17 20:06:45.749
+!MESSAGE Failed to find device info
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-05-17 20:07:14.031
+!MESSAGE Indexed 'Demo01' (35 sources, 74 headers) in 8.5 sec: 9,279 declarations; 30,326 references; 1 unresolved inclusions; 34 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui 4 4 2017-05-17 20:07:38.044
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.

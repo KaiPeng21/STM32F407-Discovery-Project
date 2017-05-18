@@ -1,0 +1,50 @@
+
+#include "stm32f4xx.h"
+
+// initialize setting functions
+void init_LED_settings(void);
+
+// misc functions
+void Delay(uint32_t nCount);
+
+int main(void)
+{
+	init_LED_settings();
+
+	// Always turn on the On-Chip Red LED
+	GPIO_WriteBit(GPIOD, GPIO_Pin_14, Bit_SET);
+
+	while (1)
+	{
+		// Oscillating the On-Chip Green LED
+		GPIO_WriteBit(GPIOD, GPIO_Pin_12, Bit_SET);
+		Delay(5000000);
+		GPIO_WriteBit(GPIOD, GPIO_Pin_12, Bit_RESET);
+		Delay(5000000);
+	}
+}
+
+void init_LED_settings(void)
+{
+	// Enable AHB1 Clock on Port D
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+
+	// Port D Pin 12 - On-Chip Green LED
+	// Port D¡@Pin 14 - On-Chip Red LED
+	GPIO_InitTypeDef GPIO_Instruct;
+	GPIO_Instruct.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_14;
+	GPIO_Instruct.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_Instruct.GPIO_OType = GPIO_OType_PP;
+	GPIO_Instruct.GPIO_Speed = GPIO_Speed_50MHz;
+
+	// Save GPIO Setting to Port D Register
+	GPIO_Init(GPIOD, &GPIO_Instruct);
+}
+
+void Delay(uint32_t nCount)
+{
+	while (nCount > 0)
+	{
+		nCount--;
+	}
+}
