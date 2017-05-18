@@ -25,7 +25,7 @@ void Delay(uint32_t nCount);
 char press = 0;
 char onems = 0;
 char onesec = 0;
-int onesec_counter = 0;
+char onesec_counter = 0;
 
 int main(void)
 {

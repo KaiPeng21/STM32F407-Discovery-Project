@@ -25,7 +25,7 @@ void Delay(uint32_t nCount);
 char press = 0;
 char onems = 0;
 char onesec = 0;
-int onesec_counter = 0;
+char onesec_counter = 0;
 
 int main(void)
 {
@@ -189,12 +189,12 @@ void init_TIM_settings(void)
 
 	// TIM2 Setting
 	// timer_tick_frequency = 84MHz / 168 = 500KHz
-	// frequency = 500KHz / 500 = 1KHz
+	// frequency = 500KHz / 5000 = 100Hz
 	// Trigger TIM2 Interrupt every 1 millisecond
 
 	TIM_TimeBaseInitTypeDef TIM_Base;
 	TIM_Base.TIM_Prescaler = 168 - 1;
-    TIM_Base.TIM_Period = 500 - 1;
+    TIM_Base.TIM_Period = 5000 - 1;
     TIM_Base.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_Base.TIM_CounterMode = TIM_CounterMode_Up;
     TIM_Base.TIM_RepetitionCounter = 0;

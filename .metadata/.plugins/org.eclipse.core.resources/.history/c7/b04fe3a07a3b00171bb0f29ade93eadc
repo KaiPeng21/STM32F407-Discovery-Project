@@ -16,16 +16,12 @@ void init_LED_settings(void);
 void init_PushButton_settings(void);
 void init_EXTI_settings(void);
 void init_NVIC_settings(void);
-void init_TIM_settings(void);
 
 // misc functions
 void Delay(uint32_t nCount);
 
 // user define variables
 char press = 0;
-char onems = 0;
-char onesec = 0;
-int onesec_counter = 0;
 
 int main(void)
 {
@@ -36,9 +32,6 @@ int main(void)
 	// interrupt initializations
 	init_EXTI_settings();
 	init_NVIC_settings();
-
-	// timer initializations
-	init_TIM_settings();
 
 	while (1)
 	{
@@ -55,13 +48,6 @@ int main(void)
 				GPIO_WriteBit(GPIOD, GPIO_Pin_14, Bit_SET);
 			}
 		}
-
-		if (onesec == 1)
-		{
-			onesec = 0;
-
-			GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
-		}
 	}
 }
 
@@ -73,23 +59,6 @@ void EXTI0_IRQHandler(void)
 
 		EXTI_ClearITPendingBit(EXTI_Line0);
 	}
-}
-
-void TIM2_IRQHandler(void)
-{
-    if (TIM_GetITStatus(TIM2, TIM_IT_Update) == SET)
-    {
-    	onems = 1;
-
-    	onesec_counter++;
-    	if (onesec_counter >= 1000)
-    	{
-    		onesec = 1;
-    		onesec_counter = 0;
-    	}
-
-        TIM_ClearITPendingBit(TIM2, TIM_FLAG_Update);
-    }
 }
 
 void init_LED_settings(void)
@@ -159,49 +128,20 @@ void init_NVIC_settings(void)
 	NVIC_Instruct.NVIC_IRQChannelPreemptionPriority = 0x00;
 	NVIC_Instruct.NVIC_IRQChannelSubPriority = 0x01;
 	NVIC_Instruct.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_Init(&NVIC_Instruct);
 
 }
 
-
-/*
- *  TIM calculation
- *
- *
- */
 void init_TIM_settings(void)
 {
-/*
- *  APB1 bus has a 42MHz clock. Internal PLL double this frequency for timer up to 84 MHz.
- *  APB2 bus has a 84MHz clock. Internal PLL double this frequency for timer up to 168 MHz.
- *
- *  TIM4 is Connected to APB1 with a maximum frequency up to 84 MHz
- *
- *  timer_tick_frequency = timer_default_frequency / (prescale_factor + 1)
- *  frequency = timer_tick_frequency / (TIM_Period + 1)
- *
- *  Note: The maximum TIM_Period is 65535
- *
- */
-
-	// Enable APB1 clock for TIM2
+	// Enable APB1 clock for TIM channel 2
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 
-	// TIM2 Setting
-	// timer_tick_frequency = 84MHz / 168 = 500KHz
-	// frequency = 500KHz / 500 = 1KHz
-	// Trigger TIM2 Interrupt every 1 millisecond
+	TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
 
-	TIM_TimeBaseInitTypeDef TIM_Base;
-	TIM_Base.TIM_Prescaler = 168 - 1;
-    TIM_Base.TIM_Period = 500 - 1;
-    TIM_Base.TIM_ClockDivision = TIM_CKD_DIV1;
-    TIM_Base.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_Base.TIM_RepetitionCounter = 0;
-    TIM_TimeBaseInit(TIM2, &TIM_Base);
+    NVIC_Init(&NVIC_InitStructure);
 
-    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
-    TIM_Cmd(TIM2, ENABLE); // Start Counting
+
+
 }
 
 void Delay(uint32_t nCount)

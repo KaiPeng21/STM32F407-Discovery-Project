@@ -208,3 +208,6 @@ Binding(ALT+CTRL+T,
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-05-17 21:49:38.715
 !MESSAGE Indexed 'Demo02' (35 sources, 74 headers) in 7.1 sec: 9,271 declarations; 30,262 references; 1 unresolved inclusions; 34 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.core.net 4 0 2017-05-17 23:09:16.866
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'µLªk¤U¸ü proxy ¦۰ʳ]©' #12167.

@@ -23,9 +23,6 @@ void Delay(uint32_t nCount);
 
 // user define variables
 char press = 0;
-char onems = 0;
-char onesec = 0;
-int onesec_counter = 0;
 
 int main(void)
 {
@@ -36,9 +33,6 @@ int main(void)
 	// interrupt initializations
 	init_EXTI_settings();
 	init_NVIC_settings();
-
-	// timer initializations
-	init_TIM_settings();
 
 	while (1)
 	{
@@ -55,13 +49,6 @@ int main(void)
 				GPIO_WriteBit(GPIOD, GPIO_Pin_14, Bit_SET);
 			}
 		}
-
-		if (onesec == 1)
-		{
-			onesec = 0;
-
-			GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
-		}
 	}
 }
 
@@ -73,23 +60,6 @@ void EXTI0_IRQHandler(void)
 
 		EXTI_ClearITPendingBit(EXTI_Line0);
 	}
-}
-
-void TIM2_IRQHandler(void)
-{
-    if (TIM_GetITStatus(TIM2, TIM_IT_Update) == SET)
-    {
-    	onems = 1;
-
-    	onesec_counter++;
-    	if (onesec_counter >= 1000)
-    	{
-    		onesec = 1;
-    		onesec_counter = 0;
-    	}
-
-        TIM_ClearITPendingBit(TIM2, TIM_FLAG_Update);
-    }
 }
 
 void init_LED_settings(void)
@@ -189,12 +159,12 @@ void init_TIM_settings(void)
 
 	// TIM2 Setting
 	// timer_tick_frequency = 84MHz / 168 = 500KHz
-	// frequency = 500KHz / 500 = 1KHz
+	// frequency = 500KHz / 5000 = 100Hz
 	// Trigger TIM2 Interrupt every 1 millisecond
 
 	TIM_TimeBaseInitTypeDef TIM_Base;
 	TIM_Base.TIM_Prescaler = 168 - 1;
-    TIM_Base.TIM_Period = 500 - 1;
+    TIM_Base.TIM_Period = 5000 - 1;
     TIM_Base.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_Base.TIM_CounterMode = TIM_CounterMode_Up;
     TIM_Base.TIM_RepetitionCounter = 0;
